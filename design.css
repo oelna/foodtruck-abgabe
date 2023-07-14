@@ -1,0 +1,75 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+	font-family: system-ui;
+	background-color: skyblue;
+}
+
+.container {
+	display: flex;
+	gap: 10px;
+	flex-wrap: wrap;
+	margin-inline: auto;
+	margin-top: 50px;
+	width: 70%;
+	outline: 0px solid #f0f;
+}
+
+.container > * {
+	padding: 1rem;
+	background-color: #fff;
+	outline: 0px solid blue;
+}
+
+.container header {
+	flex-basis: 100%;
+}
+
+.container nav {
+	flex-basis: min(30%, 250px);
+}
+
+.container main {
+	flex: 1;
+}
+
+.container footer {
+	flex-basis: 100%;
+}
+
+h1 {
+	margin-block-end: 2rem;
+}
+
+nav ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	list-style: none;
+}
+
+nav li a {
+	display: block;
+	padding: 0.5em;
+	background-color: white;
+	color: black;
+	text-decoration: none;
+	font-weight: 500;
+}
+
+form {
+	outline: 0px solid blue;
+	margin-block: 2rem;
+	padding-block: 0.5rem;
+}
+
+input {
+	font-size: 100%;
+	border: 1px solid black;
+	padding: 0.4em;
+	width: 100%;
+}
+
+label {
+	display: flex;
+}
